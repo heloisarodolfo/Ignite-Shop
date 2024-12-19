@@ -1,8 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['files.stripe.com'], // Certifique-se de incluir este domínio
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
